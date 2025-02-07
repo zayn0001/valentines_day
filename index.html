@@ -31,7 +31,6 @@
             align-items: center;
         }
         h1 {
-            margin-top: 20vh;
             font-size: 3em;
             margin-bottom: 30px;
             color: #333;
@@ -79,10 +78,11 @@
     <link href="jquery-sakura.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Will you be my Valentine?</h1>
+
+    <h1>dear devika,<br>will you be my valentine?</h1>
     <div class="button-container">
-        <button id="no" class="btn hov">No</button>
-        <button id="yes" class="btn hov">Yes</button>
+        <button id="no" class="btn hov">no</button>
+        <button id="yes" class="btn hov">yes</button>
     </div>
     <h1 id="disp">hehe nice try. look again</h1>
     <script>
@@ -168,8 +168,8 @@
         
         noBtn.addEventListener('click', () => {
             
-            yesBtn.innerHTML = "No"
-            noBtn.innerHTML = "Yes"
+            yesBtn.innerHTML = "no"
+            noBtn.innerHTML = "yes"
             noBtn.style.backgroundColor = "#ff3357"
             
             yesBtn.classList.remove("hov")
